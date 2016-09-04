@@ -27,7 +27,7 @@ npm start
 
 Navigate to http://localhost:5000 and you will be redirected to `/menu`.
 
-[This is a fictional bakery](/client/img/Screenshot.png?raw=true)
+![This is a fictional bakery](/client/img/Screenshot.png?raw=true)
 
 `/menu` is the only route included - but you can add more by following the example of [client/js/src/components/menu](/client/js/src/components/menu). Just duplicate that folder and change the names and references. Don't forget to `import` any new components into [client/js/src/main.js](/client/js/src/main.js) also.
 
