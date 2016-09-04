@@ -1,0 +1,155 @@
+body {
+  background: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  color: #77848D;
+
+  header {
+    width: 100%;
+    margin-top: 5vh;
+    font-size: 55px;
+    color: #45484C;
+    letter-spacing: 1.62px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      margin-left: 3vw;
+      margin-right: 3vw;
+    }
+
+    .logo {
+      position: absolute;
+      top: 5vh;
+      left: 50%;
+      margin-left: -25px;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    margin: 9px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .filter {
+    padding: 4vw 11vw;
+    width: 95%;
+
+    .filter-option {
+      cursor: pointer;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      text-transform: uppercase;
+      border: 1px solid #8899EE;
+      border-radius: 4px;
+      display: inline-block;
+      width: 25%;
+      height: 40px;
+      color: #8899EE;
+      &.selected, &:hover {
+        background: #8899EE;
+        color: #fff;
+      }
+    }
+
+    .vegan-option {
+      border: 1px solid #1EC65C;
+      color: #1EC65C;
+      &.selected, &:hover {
+        background: #1EC65C;
+        color: #fff;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  input {
+    padding-left: 35px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 320px;
+    border: 1px solid #77848D;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.14), 0px 3px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 4px;
+    font-size: 14.5px;
+    color: #394147;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    i {
+      background: #A6B1C0;
+    }
+  }
+
+  ul.menu {
+    list-style-type: none;
+  }
+
+  li.menu-item {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 4vh;
+    overflow: hidden;
+    width: 45%;
+    height: 30vh;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.14), 0px 3px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 2px;
+
+    img {
+      display: inline;
+      width: 40%;
+      object-fit: cover;
+    }
+
+    .product-details {
+      float: right;
+      width: 60%;
+      height: 100%;
+      padding: 2vw;
+    }
+
+    .product-title {
+      font-size: 18px;
+      color: #4B5359;
+      letter-spacing: 0.57px;
+      line-height: 20px;
+    }
+
+    .price {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      font-size: 12.5px;
+      color: #8899EE;
+      letter-spacing: 0.5px;
+    }
+
+    .product-description {
+      font-size: 10.5px;
+      letter-spacing: 0px;
+      line-height: 10px;
+    }
+
+    .vegan {
+      position: absolute;
+      top: 1vh;
+      left: 1vh;
+      background: #1EC65C;
+      color: #fff;
+      border-radius: 10vw;
+      padding: 0.5vw 0.8vw 0.4vw 0.8vw;
+    }
+  }
+
+}

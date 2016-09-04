@@ -1,0 +1,27 @@
+<header>
+  <span>Daria's</span>
+  <img class="logo" src="img/logo.svg" />
+  <span>Sweets</span>
+</header>
+<nav class="filter">
+  <div class="filter-option" ng-click="sort(option.name)" ng-class="{'selected': option.selected, 'vegan-option': option.name === 'vegan'}" ng-repeat="option in filterOptions">
+    {{option.name}}
+  </div>
+</nav>
+<main>
+  <div class="container">
+    <img src="img/search-icon.svg" class="search-icon"/>
+    <input type="search" placeholder="Search" class="center" ng-change="search()" ng-model="searchBar.query"/>
+    <ul class="menu">
+      <li ng-repeat="item in searchResults" class="menu-item">
+        <div class="product-details">
+          <span class="product-title">{{item.name}}</span>
+          <span ng-if="item.is_vegan" class="vegan">V</span>
+          <div class="price">${{item.price}}.00</div>
+          <span class="product-description">{{item.description}}</span>
+        </div>
+        <img ng-src="{{item.image_url}}" class="product-image" height="100%"/>
+      </li>
+    </ul>
+  </div>
+</main>
