@@ -14,7 +14,7 @@ gulp.task('dev', function () {
 		script: 'server/index.js',
 		ext: '.js',
 		env: { 'NODE_ENV': 'development' },
-		ignore: ['node_modules/', 'docs/', 'client/js/bundle.min.js']
+		ignore: ['node_modules/', 'docs/', 'client/js/bundle.min.js', 'client/templates.js']
 	})
 	.on('start', ['build'])
 	.on('change', ['build'])

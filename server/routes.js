@@ -88,7 +88,7 @@ module.exports = {
     },
 
     '*': function * (next) {
-      if ((this.url.indexOf('/api') === -1) && (this.url.indexOf('.') === -1)) {
+      if (((this.url.indexOf('/api') === -1) && (this.url.indexOf('.') === -1))) {
         this.response.serveFile('./client/index.html')
       }
       else yield next
