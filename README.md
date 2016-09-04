@@ -33,7 +33,7 @@ Navigate to http://localhost:5000 and you will be redirected to `/menu`.
 
 The bakery menu was specified by the challenge - and it's a great way to demonstrate Angular in action with ES6 on both client and server. You could also empty out the client/ folder entirely and add your own structure for [React](https://facebook.github.io/react/) or [choo](https://github.com/yoshuawuyts/choo) - whatever floats your boat.
 
-As a side note: Daria is my aunt's name. She always made great cookies.  
+As a side note: Daria is my aunt's name. She always made great cookies. It's also the name of a really cool show from the 90's.   
 
 ## Customization
 
