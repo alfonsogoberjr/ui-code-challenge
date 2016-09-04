@@ -16,8 +16,24 @@ But I digress. Let's build this thing.
 
 ```
 git clone https://github.com/alfonsogoberjr/ui-code-challenge.git
-npm install && npm start
+cd ui-code-challenge && npm install
 ```
+
+And start with
+
+```
+npm start
+```
+
+Navigate to http://localhost:5000 and you will be redirected to `/menu`.
+
+[This is a fictional bakery](/client/img/Screenshot.png?raw=true)
+
+`/menu` is the only route included - but you can add more by following the example of [client/js/src/components/menu](/client/js/src/components/menu). Just duplicate that folder and change the names and references. Don't forget to `import` any new components into [client/js/src/main.js](/client/js/src/main.js) also.
+
+The bakery menu was specified by the challenge - and it's a great way to demonstrate Angular in action with ES6 on both client and server. You could also empty out the client/ folder entirely and add your own structure for [React](https://facebook.github.io/react/) or [choo](https://github.com/yoshuawuyts/choo) - whatever floats your boat.
+
+As a side note: Daria is my aunt's name. She always made great cookies.  
 
 ## Customization
 
