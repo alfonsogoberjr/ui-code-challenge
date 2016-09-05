@@ -28,7 +28,7 @@ gulp.task('copy', function () {
 gulp.task('webpack', function (done) {
 		webpack(webpackConfig, function (err, stats) {
 			if (err) throw new plugins.util.PluginError("webpack", err);
-      //plugins.util.log("[webpack]", stats.toString());
+      plugins.util.log("[webpack]", stats.toString());
 		})
 })
 
