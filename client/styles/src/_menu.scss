@@ -1,0 +1,135 @@
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+.search-icon {
+  position: absolute;
+  margin: 9px;
+  width: 20px;
+  height: 20px;
+}
+
+.filter {
+  padding: 30px 0 0 0;
+  width: 100%;
+
+  .filter-option {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4%;
+    text-transform: uppercase;
+    border: 1px solid #8899EE;
+    border-radius: 4px;
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    color: #8899EE;
+    &.selected, &:hover {
+      background: #8899EE;
+      color: #fff;
+    }
+    @include media("<tablet") {
+      font-size: 12px;
+      padding: 13px 0;
+      width: 26%;
+      margin: 4px -27px 1px 31px;
+      &.selected, &:hover {
+        background: #8899EE;
+        color: #fff;
+      }
+    }
+  }
+
+  .vegan-option {
+    border: 1px solid #1EC65C;
+    color: #1EC65C;
+    &.selected, &:hover {
+      background: #1EC65C;
+      color: #fff;
+    }
+    @include media("<tablet") {
+      background: #1EC65C;
+      color: #fff;
+    }
+  }
+}
+
+ul.menu {
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+li.menu-item {
+  @include media("<tablet") {
+    width: 100%;
+  }
+  padding: 1vw;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 50%;
+  background: #FFFFFF;
+
+  div.wrapper {
+    overflow: hidden;
+    height: 30vh;
+    margin-top: 4vh;
+    border: 1px solid #979797;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.14), 0px 3px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 2px;
+
+    img {
+      display: inline;
+      width: 40%;
+      object-fit: cover;
+    }
+
+    .product-details {
+      float: right;
+      width: 60%;
+      height: 100%;
+      padding: 2vw;
+    }
+
+    .product-title {
+      font-size: 24px;
+      color: #4B5359;
+      letter-spacing: 0.57px;
+      line-height: 20px;
+      @include media("<tablet") {
+        font-size: 18px;
+      }
+    }
+
+    .price {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      font-size: 18px;
+      color: #8899EE;
+      letter-spacing: 0.5px;
+      @include media("<tablet") {
+        font-size: 14.5px;
+      }
+    }
+
+    .product-description {
+      font-size: 14.5px;
+      letter-spacing: 0px;
+      line-height: 10px;
+      @include media("<tablet") {
+        font-size: 11px;
+      }
+    }
+
+    .vegan {
+      position: absolute;
+      top: 1vh;
+      left: 1vh;
+      background: #1EC65C;
+      color: #fff;
+      border-radius: 10vw;
+      padding: 0.5vw 0.8vw 0.4vw 0.8vw;
+    }
+  }
+}
