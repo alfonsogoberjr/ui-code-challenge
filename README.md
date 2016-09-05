@@ -27,7 +27,7 @@ npm start
 
 Navigate to http://localhost:5000 and you will be redirected to `/menu`.
 
-![This is a fictional bakery](/client/img/Screenshot.png?raw=true)
+![This is a fictional bakery](/client/img/screenshot-desktop.png?raw=true)
 
 `/menu` is the only route included - but you can add more by following the example of [client/js/src/components/menu](/client/js/src/components/menu). Just duplicate that folder and change the names and references. Don't forget to `import` any new components into [client/js/src/main.js](/client/js/src/main.js) also.
 
@@ -50,4 +50,4 @@ A few noteworthy files and directories come to mind:
 * I added an extra property `type` on the inventory data in order to facilitate the filtering UI.
 * You can filter multiple types at once by clicking multiple boxes in the menu. They're toggle buttons, so clicking them again will remove them from the filter mechanism.
 * Style elements are not _directly_ handled by gulp, because (as mentioned earlier) Webpack is just _so much faster_ than any alternatives. Gulp, however, still makes sense as a task runner, and Webpack is just one of the tasks it runs.
-* Gulp also runs [apiDoc](http://apidocjs.com/) to automatically generate docs from the source comments in [server/routes.js](/server/routes.js). You can see the docs at http://localhost:5000/docs. 
+* Gulp also runs [apiDoc](http://apidocjs.com/) to automatically generate docs from the source comments in [server/routes.js](/server/routes.js). You can see the docs at http://localhost:5000/docs.
