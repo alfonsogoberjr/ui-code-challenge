@@ -2,13 +2,24 @@ import angular from 'angular'
 import oboe from 'oboe'
 
 let autoReload = angular.module('autoReload', [])
-  .factory('autoReload', function () {
+  .factory('autoReload', function ($timeout, $interval) {
+    "ngInject"
     const connect = (timeout) => {
         if (!timeout) timeout = 3600000
         // Establish streaming HTTP connection for developer auto-reload
         function reload() {
-          console.log('Reloading...')
-          window.location.reload()
+          let count = 8
+
+          $interval(() => {
+            console.log(new Array(24 + 1).join('\n'))
+            console.log(`Reloading in ${count}s`)
+            count--
+          }, 1000)
+
+          $timeout(() => {
+            console.log('Reloading...')
+            window.location.reload()
+          }, 8000)
         }
         oboe({
             method: 'GET',
@@ -22,6 +33,6 @@ let autoReload = angular.module('autoReload', [])
 
     return { connect }
   })
-  .name;
+  .name
 
 export {autoReload}

@@ -16,8 +16,13 @@ gulp.task('dev', function () {
 		env: { 'NODE_ENV': 'development' },
 		ignore: ['node_modules/', 'docs/', 'client/js/bundle.min.js', 'client/templates.js']
 	})
-	.on('start', ['build'])
-	.on('change', ['build'])
+	.on('start', ['copy', 'build'])
+	.on('change', ['copy', 'build'])
+})
+
+gulp.task('copy', function () {
+		gulp.src('./client/js/index.html')
+			.pipe(gulp.dest('client'))
 })
 
 gulp.task('webpack', function (done) {

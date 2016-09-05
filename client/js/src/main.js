@@ -14,4 +14,4 @@ angular.module('app', [
   }])
   .run(['autoReload', (autoReload) => {
     autoReload.connect(/* add refresh time interval in ms, defaults to 1 hour*/)
-  }])
+  }]) 

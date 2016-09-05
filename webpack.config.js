@@ -51,7 +51,8 @@ module.exports = {
         filename: 'index.html',
         template: `${__dirname}/client/index.html`,
         inject: 'body',
-        hash: true
+        hash: true,
+        cache: true
       })
     ],
     resolve: { modulesDirectories: ['node_modules', 'client/js', 'client/styles'], extension: ['', '.js', '.scss'] }
